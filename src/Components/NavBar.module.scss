@@ -1,0 +1,40 @@
+.navBarContainer{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    .leftNavBarContainer{
+        display: flex;
+        padding-left: 60px;
+
+        .countrySelectorContainer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 25px;
+            margin-left: 15px;
+            border: 2px solid rgb(128, 128, 128);
+            border-radius: 6px;
+            padding: 4px;
+
+            .countryFlag,{
+                margin-left: 15px;
+            }
+            .Darktore{
+                margin-left: 15px;
+                margin-right: 10px;
+            }
+            .Rectangle{
+                margin-left: 2px;
+                margin-right: 30px;
+            }
+            .SelectorCode{
+
+            }
+        }
+
+    }
+
+    .OptionsContainer{
+        margin-right: 50px;
+    }
+}

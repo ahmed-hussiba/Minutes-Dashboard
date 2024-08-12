@@ -1,0 +1,23 @@
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+
+.bodyContainer{
+    margin-top: 0;
+    display: flex;
+
+    .mapContainer{
+        flex: 1;
+    }
+
+}
+.tablesContainer{
+    // border: 1px solid black;
+    display: flex;
+    margin-left: 70px;
+    justify-content: space-between ;
+    // width: 650px;
+
+
+}
+}

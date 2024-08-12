@@ -1,0 +1,91 @@
+$primary-bg-color: #f4f4f4;
+$alternate-bg-color: #f9f9f9;
+$text-color: #333;
+$border-color: #ddd;
+$border-highlight-color: #333;
+$font-family: Arial, sans-serif;
+$font-size: 14px;
+
+.tableContainer {
+  margin-top: 15px;
+  width: 630px;
+  border: 3px solid $alternate-bg-color;
+  box-shadow: 0 0 10px $border-color;
+
+  .tableHeaderText {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px;
+
+    .checkedInText {
+      background-color: $alternate-bg-color;
+      margin-left: 5px;
+      padding: 5px;
+      border-radius: 5px;
+    }
+
+    .select {
+      // margin-top: 5px;
+      height: 40px;
+      width: 150px;
+      border-radius: 6px;
+    }
+  }
+
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: $font-family;
+
+    thead {
+      th {
+        background-color: $primary-bg-color;
+        color: $text-color;
+        padding: 12px;
+        text-align: left;
+        border-bottom: 2px solid $border-highlight-color;
+        font-weight: bold;
+      }
+    }
+
+    tbody {
+      tr {
+        &:nth-child(even) {
+          background-color: $alternate-bg-color;
+        }
+      }
+
+      td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid $border-color;
+        font-size: $font-size;
+        > P {
+          text-align: center;
+          border-radius: 8px;
+          padding: 2px;
+        }
+      }
+      .Fulfilled {
+        color: green;
+        background-color: lightgreen;
+      }
+
+      .Arrived {
+        color: blue;
+        background-color: lightblue;
+      }
+
+      .Undelivered {
+        color: red;
+        background-color: orange;
+      }
+      .Created {
+        color: gray;
+        background-color: antiquewhite;
+      }
+    }
+  }
+}
